@@ -1,10 +1,13 @@
 import React from "react";
+import { Router } from "workbox-routing";
 import './menu-items.styles.css';
-const MenuItem =({title,imageURL})=>(
-<div classname ='a' style={{backgroundImage:`url(${imageURL})`}}
+import { withRouter} from 'react-router-dom';
+import { match } from "react-dom";
 
-
-className="menu-item">
+const MenuItem =({title,imageURL,history,linkUrl})=>(
+<div  style={{backgroundImage:`url(${imageURL})`}}
+className="menu-item" onClick={()=>history.push(`${linkUrl}`)}>
+       
         <div className="content ">
             <h1 className="title">{title}</h1>
                 <span className="subtitle">Shopnow
@@ -13,6 +16,6 @@ className="menu-item">
   </div>
 );
 
-export default MenuItem;
+export default withRouter(MenuItem);
 
 

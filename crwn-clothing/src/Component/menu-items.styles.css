@@ -13,36 +13,44 @@
 }
       
     .content {
-      height: 90px;
-      padding: 0 25px;
+      height: 50px;
+      padding: 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       border: 1px solid black;
       opacity: 0.9;
+      background-color: rgb(229, 235, 235);
+      
     }
       .title {
         font-weight: bold;
         margin-bottom: 6px;
         font-size: 22px;
-        color: #4a4a4a;
+        color: hsl(39, 97%, 54%);
       }
   
       .subtitle {
         font-weight: lighter;
         font-size: 16px;
+        color: blueviolet;
       }
-      a:hover {
+      .content:hover {
         cursor: pointer;
-      }
-      a:background-image {
-        transform: scale(1.1);
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        transform: scale(1.1);
+        opacity: 0.9;
+
       }
-        a::content {
-          opacity: 0.9;
-        }
+      .menu-item:hover {
+        cursor: pointer;
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        transform: scale(1.1);
+        opacity: 0.9;
+
+      }
+        
         
         
   
