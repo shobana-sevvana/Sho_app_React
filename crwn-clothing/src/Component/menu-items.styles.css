@@ -1,6 +1,6 @@
 .menu-item {
     min-width: 30%;
-    height: 240px;
+    height: 200px;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
@@ -13,28 +13,28 @@
 }
       
     .content {
-      height: 50px;
-      padding: 15px;
+      height: 35px;
+      padding: 8px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       border: 1px solid black;
       opacity: 0.9;
-      background-color: rgb(229, 235, 235);
+      background-color: rgb(220, 230, 230);
       
     }
       .title {
         font-weight: bold;
-        margin-bottom: 6px;
-        font-size: 22px;
+        margin-bottom: 4px;
+        font-size: 13px;
         color: hsl(39, 97%, 54%);
       }
   
       .subtitle {
-        font-weight: lighter;
-        font-size: 16px;
-        color: blueviolet;
+        font-weight: bolder;
+        font-size: 13px;
+        color: rgb(240, 10, 10);
       }
       .content:hover {
         cursor: pointer;
